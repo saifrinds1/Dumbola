@@ -27,6 +27,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
@@ -191,7 +192,7 @@ public class Dumbola extends JFrame {
 					box.add(tempTextField);
 					bigBox.add(box);
 					box2.add(new JLabel("Secret# : "));
-					JPasswordField tempTextField1 = new JTextField();
+					JPasswordField tempTextField1 = new JPasswordField();
 					box2.add(tempTextField1);
 					bigBox.add(box2);
 
@@ -199,7 +200,6 @@ public class Dumbola extends JFrame {
 					for (int a = 0; a < player.length; a++) {
 						tempTextField.setText("");
 						tempTextField1.setText("");
-						tempTextField1
 						player[a] = new Player();
 						int secretNumber;
 						result = JOptionPane.showConfirmDialog(null, bigBox, "Player " + a + " info",
