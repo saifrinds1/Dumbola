@@ -191,7 +191,7 @@ public class Dumbola extends JFrame {
 					box.add(tempTextField);
 					bigBox.add(box);
 					box2.add(new JLabel("Secret# : "));
-					JTextField tempTextField1 = new JTextField();
+					JPasswordField tempTextField1 = new JTextField();
 					box2.add(tempTextField1);
 					bigBox.add(box2);
 
@@ -199,6 +199,7 @@ public class Dumbola extends JFrame {
 					for (int a = 0; a < player.length; a++) {
 						tempTextField.setText("");
 						tempTextField1.setText("");
+						tempTextField1
 						player[a] = new Player();
 						int secretNumber;
 						result = JOptionPane.showConfirmDialog(null, bigBox, "Player " + a + " info",
